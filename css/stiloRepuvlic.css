@@ -1,0 +1,198 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color:#FF8000;
+    font-size: 20px;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 120px;
+}
+#espacio {
+    float: left;
+    width: 425px;
+    height: 120px;
+}
+#zonaLogo {
+    width: 160px;
+    height: 100px;
+    background-image: url(../imagenes/DevRepuvlic.png);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#menuPrincipal {
+    max-width: 100%;
+    width: 900px;
+    height: 40px;
+    background-color:#000;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    line-height: 110%;
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+#menuPrincipal lu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+    text-decoration: none;
+    list-style-type: none;
+}
+#menuPrincipal li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 53px;
+    font-size: 22px;
+    color:#FF8000;
+}
+#menuPrincipal li a{
+    text-decoration: none;
+    list-style-type: none;
+    color:#FF8000;
+}
+#menuPrincipal li a:hover{
+    color: #ffffff;
+}
+#inicialServicios {
+    display: grid;
+    grid-template-areas: "tituloServicios contenedorServicios";
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#tituloServicios {
+    grid-area: tituloServicios;
+    background-color: #000;
+}
+#tituloServicios:hover {
+    background-color: #ffffff2f;
+}
+#textoTituloServicios {
+    width: 360px;
+    height: 200px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 70px;
+    text-align: right;
+}
+#tituloDev {
+    width: 100%;
+    height: 60px;
+    font-size: 27px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+#introDev {
+    width: 80%;
+    height: 250px;
+    font-size: 22px;
+    color: #0080FF;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+#contenedorServicios {
+    grid-area: contenedorServicios;
+    width: 100%;
+    display: flex;
+}
+.contenedorImagen {
+    width: 25%;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}    
+.contenedorImagen:hover  img {
+    filter: blur(1.5px);
+    transform: scale(1.3) ;
+    transition: all .3s;
+}
+img {
+    width: 220px;
+    height: 100%;
+    transition: all .3s;
+}
+.contenedorImagen::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+} 
+.contenedorImagen:hover:before {
+    background-color: rgba(253, 98, 8, 0.8);
+    z-index: 3;
+    transition: all .3s;
+}  
+.textoServicios {
+    position: absolute;
+    color: #ffffff;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}  
+.parrafoContenedor {
+    font-size: 14px;
+    color:#FF8000;
+    margin-top: 10px;
+    padding: 5px;
+}
+.contenedorImagen:hover.tituloContenedor {
+    left: 0;
+    animation-delay: .3s;
+    transition: all .5s;
+}
+.parrafoContainer {
+    position: relative;
+    right: 150%;
+    margin-top: 15px;
+    transition: all .3s;
+}
+.contenedorImagen:hover .parrafoContainer {
+    right: 0;
+    animation-delay: .3s;
+    transition: all .5s;
+}
+#zonaDev {
+    width: 100%;
+    height: 590px;
+    background-color: #FF8000;
+    margin-top: 5px;
+}
+#zonaDesarrollo {
+    width: 100%;
+    height: 590px;
+    background-color: #ffffff;
+    margin-top: 5px;
+}
+#zonaFotografia {
+    width: 100%;
+    height: 590px;
+    background-color: #000000;
+    margin-top: 5px;
+}
+#zonaIlustracion {
+    width: 100%;
+    height: 590px;
+    background-color: #ffffff;
+    margin-top: 5px;
+}
+#zonaMarketing {
+    width: 100%;
+    height: 590px;
+    background-color: #000000;
+    margin-top: 5px;
+}
